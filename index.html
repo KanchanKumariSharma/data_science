@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kanchan Kumari Sharma</title>
+  <meta name="description" content="kanchan k sharma: research, publications, teaching, CV, and contact." />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#475569; --brand:#2563eb; --card:#f8fafc; --border:#e2e8f0;
+      --maxw: 960px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{padding:32px 0 8px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(255,255,255,0.9);backdrop-filter:saturate(1.5) blur(6px);z-index:10}
+    .top{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+    .avatar{width:84px;height:84px;border-radius:12px;object-fit:cover;border:1px solid var(--border)}
+    h1{font-size:28px;margin:0}
+    .tag{color:var(--muted)}
+    nav{margin-top:12px;display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#fff}
+
+    section{padding:28px 0;border-bottom:1px solid var(--border)}
+    section:last-of-type{border-bottom:none;padding-bottom:60px}
+    h2{font-size:22px;margin:0 0 12px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin:10px 0}
+    ul{padding-left:20px;margin:8px 0}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .pill{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted)}
+    .kicker{font-size:13px;color:var(--muted)}
+
+    .footer{padding:24px 0;color:var(--muted)}
+    .contact-list a{display:inline-block;margin-right:12px}
+
+    /* Print */
+    @media print{
+      header{position:static;background:transparent;border:none}
+      nav{display:none}
+      a{color:inherit;text-decoration:underline}
+      .card{break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="top">
+        <img class="avatar" src="img.jpg" alt="Your portrait" />
+        <div>
+          <h1>kanchan k sharma</h1>
+          <div class="tag">PhD Scholar, Department of DSE · IISERB</div>
+          <div class="kicker">Research: UAV-based 3D reconstruction </div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#pubs">Publications</a>
+        
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p> I am a PhD student in Data Science at IISERB with a background in mathematics, advised by Prof. Vaibhav Kumar. I am planning to work on UAV-based 3D generation and aim to combine mathematical methods with computational approaches for advancements in 3D modeling and spatial data analysis.</p>
+        <p>
+          <span class="pill">#DSE</span>
+         
+        </p>
+      </div>
+    </section>
+
+    
+   
+    
+    <section id="cv">
+      <h2>CV</h2>
+      <p>Please find my CV <a href="cv.pdf" target="_blank">here</a>.</p>
+
+      
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> kanchan25@iiserb.ac.in</p>
+        <p class="contact-list">
+          <a href="https://scholar.google.com/" rel="me">Google Scholar</a>
+          <a href="https://orcid.org/" rel="me">ORCID</a>
+          <a href="https://github.com/" rel="me">GitHub</a>
+          <a href="https://www.linkedin.com/" rel="me">LinkedIn</a>
+        </p>
+        <p class="kicker">IISERB.</p>
+      </div>
+    </section>
+
+    <div class="footer">© Kanchan Sharma</div>
+
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
